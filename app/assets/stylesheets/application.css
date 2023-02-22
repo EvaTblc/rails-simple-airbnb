@@ -11,3 +11,12 @@
   box-shadow: 1px 1px 2px lightgrey;
   border-radius: 3px;
 }
+
+a {
+  text-decoration: none;
+}
+
+.brand {
+  color: lightgrey;
+  text-align: left;
+}

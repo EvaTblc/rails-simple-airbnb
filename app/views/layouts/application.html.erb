@@ -14,11 +14,11 @@
   <body>
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand"><%= link_to "Simple Airbnb", flats_path %></a>
+        <%= link_to "Simple Airbnb", flats_path, class:"lead", style: "color: grey"%>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-          <button class="btn btn-outline-success" type="submit"><a href="/flats/new">Add Flat</a></button>
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+          <button class="btn btn-outline-secondary" type="submit"><a href="/flats/new">Add Flat</a></button>
         </form>
       </div>
     </nav>
