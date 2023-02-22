@@ -1,0 +1,36 @@
+<div class="map" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200')" >
+</div>
+<div class="container margin-top-negative">
+  <div class="row">
+    <div class= "col-8">
+      <div class= "flat-show-card">
+        <h1><%= @flat.name %></h1><br>
+        <p><%= @flat.address %></p>
+      </div>
+      <div class= "flat-show-card">
+      <h2>A bit more about this flat...</h2>
+        <%= @flat.description %><br>
+        <div class="map" style='background-image: url("https://trailheadtechnology.com/wp-content/uploads/2022/12/map-default-1536x761.png.webp")'></div>
+      </div>
+    </div>
+    <div class= "col-4">
+      <div class="flat-show-card">
+        <h5>Book this place:</h5>
+        <div class="input-group">
+          <span class="input-group-text" id="start-date-label">From:</span>
+          <input type="text" class="form-control" placeholder="12/10/2017" aria-label="start-date" aria-describedby="start-date-label">
+        </div>
+        <div class="input-group mt-2">
+          <span class="input-group-text" id="end-date-label">To:</span>
+          <input type="text" class="form-control" placeholder="18/10/2017" aria-label="end-date" aria-describedby="start-date-label">
+        </div>
+        <input type="submit" value="Book" class="btn btn-success mt-2" style="width: 100%">
+      </div>
+      <div class="flat-show-card">
+        <h3>Details</h3>
+        <p><%= @flat.price_per_night %> € per night</p>
+        <p><%= @flat.number_of_guests %> persons</p>
+      </div>
+    </div>
+  </div>
+</div>
